@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGet360", "TestGet360\TestGet360.csproj", "{A7EB4503-6C95-41A1-A8A1-A864C1964709}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AEF4F449-72F8-4072-803A-A088FBD36FEC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{C4F3385B-D9AB-4898-8DE9-F2798927F03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7EB4503-6C95-41A1-A8A1-A864C1964709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EB4503-6C95-41A1-A8A1-A864C1964709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EB4503-6C95-41A1-A8A1-A864C1964709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EB4503-6C95-41A1-A8A1-A864C1964709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F3385B-D9AB-4898-8DE9-F2798927F03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F3385B-D9AB-4898-8DE9-F2798927F03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F3385B-D9AB-4898-8DE9-F2798927F03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F3385B-D9AB-4898-8DE9-F2798927F03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

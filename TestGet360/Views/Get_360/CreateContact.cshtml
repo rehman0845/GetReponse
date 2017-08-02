@@ -1,0 +1,62 @@
+﻿@using TestGet360.Models;
+@using Newtonsoft.Json.Linq;
+@model TestGet360.Models.Contacts.PostContacts
+
+@{
+    ViewBag.Title = "CreateContact";
+}
+@if ((EResponseContent)TempData["Msg"] != null)
+{
+    var msg = (EResponseContent)TempData["Msg"];
+    <script>
+        @*JSON.stringify(@msg)*@
+        
+         alert("@msg.message");
+    </script>
+}
+@*@if((string)TempData["Msg"] != null)
+{
+    var msg = (string)TempData["Msg"];
+    <script>
+        alert("@msg");
+    </script>
+}*@
+
+
+<br><br />
+@Html.Label("Send Contact detalis to API")
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.name)
+                @Html.ValidationMessageFor(model => model.name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.email, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.email)
+                @Html.ValidationMessageFor(model => model.email)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+

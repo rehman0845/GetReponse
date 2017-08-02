@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@if((string)TempData["Msg"] != null)
+    {
+        var msg = (string)TempData["Msg"];
+        <script>
+            alert("@msg");
+        </script>
+    }
+
+<h2>Index</h2>
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+
+
+<script>
+    //$(document).ready(function () {
+    //    alert("before");
+
+    //    $.ajax({
+    //        url: "/Get_360/GetContacts",
+    //        type: "GET",
+    //        sucess:function(data)
+    //        {
+    //            alert("_________________");
+    //            alert(data);
+    //        },
+    //        error:function(e)
+    //        {
+    //            alert(e);
+    //        }
+    //    })
+        
+    //    alert("after");
+    //})
+</script>
+
+
+@Html.ActionLink("Create_GetResponce_Contact","CreateContact")
+
